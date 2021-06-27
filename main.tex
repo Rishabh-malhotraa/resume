@@ -1,0 +1,253 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\overfullrule=0pt
+\usepackage[colorlinks=false,draft=false]{hyperref}
+
+\usepackage{xcolor}
+% \usepackage{verbatim}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\definecolor{blue}{HTML}{005cc5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\fbox{\fcolorbox{red}{white}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheadingBold}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textbf{}{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Rishabh Malhotra} \\ \vspace{3pt}
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-8851958205 ~ \href{mailto:rmalhotra_be18@thapar.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{rmalhotra\_be18@thapar.edu}} ~ 
+    \href{https://linkedin.com/in/rishabh-malhotra-4536a418b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{rishabh-malhotra}}  ~
+    \href{https://github.com/Rishabh-malhotraa}{\raisebox{-0.2\height}\faGithub\ \underline{Rishabh-malhotraa}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thapar Institute of Engineering And Technology}{May. 2018 -- May 2022}
+      {B.E. Computer Engineering - Major Elective - Graph Theory}{Patiala, Punjab}
+  \resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Caucus : A real time collaborative editor} $|$ \emph{Typescript, React, NodeJS, Webrtc, PostgreSQL }}{May'21}
+          \resumeItemListStart
+            \resumeItem{\href{https://caucus-app.herokuapp.com/}{\color{blue} {\underline{Caucus}}} is a real-time collaborative editor with an embedded compiler for remote code execution that helps students practice for online coding interviews.}
+            \resumeItem{Accomplished real-time collaboration using Webrtc and CRDT (\emph{Conflict free Replicated Data Type}) and chat functionality with the help of web-sockets.}
+            \resumeItem{Implemented user authorization using OAuth 2.0 protocol with passport library in NodeJS.}
+            \resumeItem{Uses CRDT's for conflict resolution while merging two documents while two people are collaborating.}
+            \resumeItem{Incorporated remote code execution, enabling users to compile \& run code in C++, Java, Python, JavaScript, Golang \& Rust.}
+            \resumeItem{It has gathered over \fbox{\textbf{160 stars}} on \href{https://github.com/Rishabh-malhotraa/caucus}{ \color{blue} \underline{{GitHub}}} with over \textbf{1000} registered users, and \fbox{\textbf{40000+}} website visits.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+        %   CODE FORCES DIARY PROJECT
+      \resumeProjectHeading
+          {\textbf{Code Forces Diary} $|$ \emph{React,  Redux, Typescript}}{Nov'20}
+          \resumeItemListStart
+            \resumeItem{Developed a \href{https://codeforces-diary.netlify.app/}{ \color{blue} {\underline{website}}} that visualizes user data from codeforces public API into charts and graphs.}
+            \resumeItem{Built using React and used victory Charts and D3.js for visualization.}
+            \resumeItem{It has gathered over \fbox{\textbf{60 stars}} on \href{https://github.com/Rishabh-malhotraa/codeforces-diary}{ \color{blue} \underline{{GitHub}}} with over \fbox{\textbf{8000+}} website visits.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Leetcode REST API} $|$ \emph{Selenium, Cheerio, NodeJS, Sqlite}}{Mar'21}
+          \resumeItemListStart
+            \resumeItem{Developed a public REST API in NodeJS which sends Leetcode question data in form of JSON.}
+            \resumeItem{Used selenium and cheerio to scrape all the free-questions from the Leetcode website.}
+            \resumeItem{It can filter questions based on tags, difficulty and companies. Uses Sqlite to store and Knex.js as query-builder to retrieve the list of questions.}
+          \resumeItemListEnd 
+                    \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Data Structure Repository} $|$ \emph{C++, Golang}}{Aug'19 -- Present}
+          \resumeItemListStart
+            \resumeItem{Documented a list of all \fbox{\textbf{\textit{500+}}} questions solved on Leetcode, codeforces, GeeksForGeeks.}
+            \resumeItem{Leetcode Profile \ \ \ \ \ \ \ \  \ \ \ : \href{https://leetcode.com/Rishabh-malhotraa/}{ \color{blue} {\underline{leetcode/Rishabh-malhotraa}}}}
+            \resumeItem{GeeksForGeeks Profile \ \ \ : \href{https://auth.geeksforgeeks.org/user/rishabh_malhotra/profile}{ \color{blue} {\underline{geeksforgeeks/Rishabh-malhotraa}}}}
+            % \resumeItem{GeeksForGeeks Profile : 
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Genpact}{Aug'20 -- Oct'20}
+      {Full Stack Developer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Designed and developed \href{https://crispy-spoon.netlify.app}{\underline{custom form}} to streamline the process of entering data that needs to be analyzed.}
+        \resumeItem{Developed a backend in python to handle file upload and normalize the data and send it to the spring microservice.}
+        \resumeItem{Built the frontend using React JS Typescript and Material UI and designed mockups in Figma.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Open Source}{Mar'20 -- Present}
+      {}{}
+      \vspace{-20pt}
+      \resumeSubSubheadingBold{\textbf{ \ \ \ \ \ Navidrome} $|$ \emph{Golang, React, Sqlite}}{}
+        \resumeItemListStart[leftmargin=+.7in] 
+            \resumeItem{Collaborated with the maintainer of the project to add features and remove bugs present in Navidrome, which is written in React and GoLang.}
+            \resumeItem{List of \href{https://github.com/navidrome/navidrome/pulls?q=is\%3Apr+author\%3Arishabh-malhotraa}{\underline{Pull Request}} and \href{https://github.com/navidrome/navidrome/issues?q=is\%3Aissue+author\%3ARishabh-malhotraa+}{\underline{Issues}} raised on GitHub for Navidrome.}
+          \resumeItemListEnd 
+          \resumeSubSubheadingBold{\textbf{ \ \ \ \ \ Joplin} $|$ \emph{Electron, React, Typescript, Sqlite, NodeJS }}{}
+          \resumeItemListStart[leftmargin=+.7in] 
+            \resumeItem{Worked on the open-source note-taking app \href{https://github.com/laurent22/joplin/pulls?q=author\%3Arishabh-malhotraa}{\underline{Joplin}}, written in electronJS, also made a \href{https://rishabh-malhotraa.github.io/Joplin-proposal-draft/}{\underline{re-imagined inline}} markdown/WYSIWYG editor for Joplin using React. }
+            \resumeItem{Improved documentation, and gained first-hand software development experience from the maintainers of the repository.}
+          \resumeItemListEnd 
+          \resumeItemListEnd 
+
+      \vspace{-8pt}
+%
+        %-----------PROGRAMMING SKILLS-----------
+      \section{Technical Skills}
+        \begin{itemize}[leftmargin=0.15in, label={}]
+            \normalsize{\item{
+            \textbf{Languages}{: JavaScript, TypeScript, GoLang, HTML/CSS, C++, SQL, Python, LaTex} \\
+            \vspace{4pt}
+            \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Figma } \\
+            \vspace{4pt}
+            \textbf{Technologies/Frameworks}{: React, Express, Docker, Azure, Nginx, Websockets, Webrtc} \\
+            }}
+        \end{itemize}
+        \vspace{-16pt}
+
+\end{document}
