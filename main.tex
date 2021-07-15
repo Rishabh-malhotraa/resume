@@ -43,10 +43,10 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.4in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
 
 \urlstyle{same}
 
@@ -56,7 +56,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\Large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -102,7 +102,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+      \small#1 & \textit{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -129,21 +129,28 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Rishabh Malhotra} \\ \vspace{3pt}
+    {\Huge \scshape \textcolor{blue}{ Rishabh Malhotra}} \\ \vspace{5pt}
     % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +91-8851958205 ~ \href{mailto:rmalhotra_be18@thapar.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{rmalhotra\_be18@thapar.edu}} ~ 
-    \href{https://linkedin.com/in/rishabh-malhotra-4536a418b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{rishabh-malhotra}}  ~
-    \href{https://github.com/Rishabh-malhotraa}{\raisebox{-0.2\height}\faGithub\ \underline{Rishabh-malhotraa}}
+    \small \raisebox{-0.1\height}\faPhone\ 8851958205 ~ \href{mailto:rishabhmalhotraa01@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  rishabhmalhotraa01@gmail.com} ~ 
+    \href{https://linkedin.com/in/rishabh-malhotra-4536a418b/}{\raisebox{-0.2\height}\faLinkedin\ Rishabh Malhotra}  ~
+    \href{https://github.com/Rishabh-malhotraa}{\raisebox{-0.2\height}\faGithub\ RMalhotra   }
+    \href{https://linktr.ee/Rishabh_malhotra}{\raisebox{-0.2\height}\faCode\ RMalhotra}
     \vspace{-8pt}
-\end{center}
+\end{center}\vspace{+10pt}
 
 
 %-----------EDUCATION-----------
-\section{Education}
+    \section{\Large \textcolor{blue}{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Thapar Institute of Engineering And Technology}{May 2018 -- May 2022}
-      {B.E. Computer Engineering - Major Elective - Graph Theory}{Patiala, Punjab}
+      {Thapar Institute of Engineering And Technology}{Patiala, Punjab}
+      {B.E. (Hons) Computer Engineering }{May 2018 -- May 2022}
+    
+      \vspace{-18pt} 
+      \resumeSubheading{}{}  
+      {Major Elective: Graph Theory}{}
+    %   {CGPA: 9.04}
+      
   \resumeSubHeadingListEnd
 
 % %------RELEVANT COURSEWORK-------
@@ -167,91 +174,105 @@
 
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{\Large \textcolor{blue}{Projects}}
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Caucus : A real time collaborative editor} $|$ \emph{Typescript, React, NodeJS, Webrtc, PostgreSQL }}{May'21}
+          {\textbf{\href{https://github.com/Rishabh-malhotraa/caucus}{Caucus: A real time collaborative editor}} \href{https://github.com/Rishabh-malhotraa/caucus}{\underline{\textbf{\textcolor{gray}{GitHub}}}}}{May'21}
           \resumeItemListStart
-            \resumeItem{\href{https://caucus-app.herokuapp.com/}{\color{blue} {\underline{Caucus}}} is a real-time collaborative editor with an embedded compiler that helps students practice for online coding interviews.}
-            \resumeItem{Accomplished real-time collaboration using Webrtc and CRDT (\emph{Conflict free Replicated Data Type}) and chat functionality with the help of web-sockets.}
-            \resumeItem{Implemented user authorization using OAuth 2.0 protocol with passport library in NodeJS.}
-            \resumeItem{Uses CRDT's for conflict resolution while merging two documents while two people are collaborating.}
-            \resumeItem{Incorporated remote code execution, enabling users to compile \& run code in C++, Java, Python, JavaScript, Golang \& Rust.}
-            \resumeItem{Gathered over \fbox{\textbf{160 stars}} on \href{https://github.com/Rishabh-malhotraa/caucus}{ \color{blue} \underline{{GitHub}}} with over \textbf{1000} registered users, and \fbox{\textbf{40000+}} website visits.}
+            \resumeItem{Deployed conflict resolution using \textbf{CRDT's} while merging two documents when users are collaborating.}
+            \resumeItem{Implemented user authorization using \textbf{OAuth 2.0 protocol} in NodeJS.}
+            \resumeItem{Incorporated remote code execution, enabling users to compile \& execute code in C++, Java, Python \& GoLang.}
+            \resumeItem{Gathered over \textbf{1000 registered users, 40000+ website visits with over 175 stars \& 6 contributors} on GitHub}
+            \resumeItem{\textcolor{blue}{Tech Stack} \emph{Typescript, React, NodeJS, Webrtc, PostgreSQL.}}
           \resumeItemListEnd
-          \vspace{-13pt}
-        %   CODE FORCES DIARY PROJECT
-      \resumeProjectHeading
-          {\textbf{Code Forces Diary} $|$ \emph{React,  Redux, Typescript}}{Nov'20}
-          \resumeItemListStart
-             \resumeItem{Developed a \href{https://codeforces-diary.netlify.app/}{ \color{blue} {\underline{website}}} that visualizes user data from codeforces public API into charts and graphs.}
-            \resumeItem{Built with React using D3.js library for visualization.}
-            \resumeItem{It has gathered over \fbox{\textbf{60 stars}} on \href{https://github.com/Rishabh-malhotraa/codeforces-diary}{ \color{blue} \underline{{GitHub}}} with over \fbox{\textbf{8000+}} website visits.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
+        % Leetcode rest API project
+          \vspace{-10pt}
           \resumeProjectHeading
-          {\textbf{Leetcode REST API} $|$ \emph{Selenium, Cheerio, NodeJS, Sqlite}}{Mar'21}
+          {\textbf{Leetcode REST  API }\href{https://github.com/Rishabh-malhotraa/caucus-server}{\underline{\textbf{\textcolor{gray}{GitHub}}}}}{Mar'21}
           \resumeItemListStart
             \resumeItem{Developed a RESTFUL API in NodeJS which sends Leetcode question data in form of JSON.}
-            \resumeItem{Used selenium and cheerio to scrape all the free-questions from the Leetcode website.}
-            \resumeItem{Uses Sqlite to store and Knex.js as query-builder to retrieve the list of questions, filtered based on tags, difficulty and company name.}
-          \resumeItemListEnd 
-                    \vspace{-13pt}
+            \resumeItem{Employed Cheerio, a DOM parsing library to extract the questions from the scrapped web page.}
+            \resumeItem{Uses SQLite Database to store and retrieve the list of questions, based on various filters.}
+            \resumeItem{\textcolor{blue}{Tech Stack} \emph{Selenium, Cheerio, NodeJS, SQLite.}}
+            
+            \vspace{+8pt}
+          \resumeItemListEnd
+        %   CODE FORCES DIARY PROJECT
+              \vspace{-20pt}
           \resumeProjectHeading
-          {\textbf{Data Structure Repository} $|$ \emph{C++, Golang}}{Aug'19 -- Present}
-          \resumeItemListStart
-            \resumeItem{Documented all the \fbox{\textbf{\textit{500+}}} questions solved on Leetcode, codeforces \& GeeksForGeeks.}
-            \resumeItem{Leetcode Profile \ \ \ \ \ \ \ \  \ \ \ : \href{https://leetcode.com/Rishabh-malhotraa/}{ \color{blue} {\underline{leetcode/Rishabh-malhotraa}}}}
-            \resumeItem{GeeksForGeeks Profile \ \ \ : \href{https://auth.geeksforgeeks.org/user/rishabh_malhotra/profile}{ \color{blue} {\underline{geeksforgeeks/Rishabh-malhotraa}}}}
-            % \resumeItem{GeeksForGeeks Profile : 
-          \resumeItemListEnd 
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
+              {\textbf{Code Forces Diary}\href{https://github.com/Rishabh-malhotraa/codeforces-diary}{ \underline{\textbf{\textcolor{gray}{GitHub}}}}} {Nov'20}
+              \resumeItemListStart
+                \resumeItem{Developed a \href{https://codeforces-diary.netlify.app/}{\underline{webapp}} that visualizes user data from codeforces public API into charts \& graphs.}
+                \resumeItem{Enables the user to look at a glance all their past code submission.}
+                \resumeItem{Garnered \textbf{8000+ website visits and over 60 stars} on  GitHub.}
+                \resumeItem{\textcolor{blue}{Tech Stack} \emph{React, Redux, D3.js, Typescript.}}
+              \resumeItemListEnd           
+              \resumeSubHeadingListEnd
+\vspace{-12pt}
 
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{\Large \textcolor{blue}{Experience}}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Genpact}{Aug'20 -- Oct'20}
-      {Full Stack Developer Intern}{Remote}
+      {Genpact}{}
+      {Full Stack Developer Intern}{Aug'20 -- Oct'20}
       \resumeItemListStart
-        \resumeItem{Designed and developed \href{https://crispy-spoon.netlify.app}{\underline{custom form}} to streamline the process of entering data that needs to be analyzed.}
-        \resumeItem{Developed a backend in python to handle file upload, normalize and pre-process the data before send it to the spring micro-service.}
-        \resumeItem{Built the frontend using React JS Typescript and Material UI and designed UI mockups in Figma.}
-      \resumeItemListEnd
+        \resumeItem{Developed a \href{https://github.com/Rishabh-malhotraa/crispy-spoon}{\underline{custom form}} to streamline the process of entering data that needs to be analyzed.}
+        \resumeItem{Accomplished file uploads, normalization \& pre-processing its data before sending it to the spring micro-service.}
+        \resumeItem{\textcolor{blue}{Tech Stack} \emph{Typescript, ReactJS, Redux, Material UI, Figma.}}
+        \resumeItemListEnd
+        
+         \vspace{+6pt}
+        
 
     \resumeSubheading
-      {Open Source}{Mar'20 -- Present}
-      {}{}
-      \vspace{-20pt}
-      \resumeSubSubheadingBold{\textbf{ \ \ \ \ \ Navidrome} $|$ \emph{Golang, React, Sqlite}}{}
-         \resumeItemListStart[leftmargin=+.7in] 
-            \resumeItem{Collaborated with the maintainer of the project to add features and remove bugs present in Navidrome, which is written in React and GoLang.}
-            \resumeItem{List of \href{https://github.com/navidrome/navidrome/pulls?q=is\%3Apr+author\%3Arishabh-malhotraa}{\underline{Pull Request}} and \href{https://github.com/navidrome/navidrome/issues?q=is\%3Aissue+author\%3ARishabh-malhotraa+}{\underline{Issues}} raised on GitHub for Navidrome.}
+      {Ernst \& Young}{}
+      {Software Development Intern}{Aug'20 - Oct'20}
+         \resumeItemListStart 
+            \resumeItem{Wrote
+            \href{https://github.com/Rishabh-malhotraa/python-scripts-EY-intership}{\underline{python scripts}} to automate the data entry process. }
+            \resumeItem{Used web-scraping to automate updation of over 20,000 business descriptions of publicly traded company.}
+            \resumeItem{\textcolor{blue}{Tech Stack} \emph{Python, Pandas, BeautifulSoup}}
           \resumeItemListEnd 
-          \resumeSubSubheadingBold{\textbf{ \ \ \ \ \ Joplin} $|$ \emph{Electron, React, Typescript, Sqlite, NodeJS }}{}
-          \resumeItemListStart[leftmargin=+.7in] 
-            \resumeItem{Worked on the open-source note-taking app \href{https://github.com/laurent22/joplin/pulls?q=author\%3Arishabh-malhotraa}{\underline{Joplin}}, written in electronJS, also made a \href{https://rishabh-malhotraa.github.io/Joplin-proposal-draft/}{\underline{re-imagined inline}} markdown/WYSIWYG editor for Joplin using React. }
-            \resumeItem{Improved documentation, and gained first-hand software development experience from the maintainers of the repository.}
-          \resumeItemListEnd 
-          \resumeItemListEnd 
+           
+                 \vspace{+6pt}
+           
+    % \resumeSubheading
+    %   {Navidrome}{}
+    %   {Open Source Contributer}{Feb'21 -- May'21}
+    %      \resumeItemListStart
+    %      \resumeItem{Multiple \href{https://github.com/navidrome/navidrome/pulls?q=is\%3Apr+author\%3Arishabh-malhotraa}{\underline{pull requests}} and \href{https://github.com/navidrome/navidrome/issues?q=is\%3Aissue+author\%3ARishabh-malhotraa+}{\underline{issues}} raised on GitHub.}
+    %         \resumeItem{Collaborated with the maintainer of the project to add features \& remove bugs, written in React and GoLang.}
+    %           \resumeItem  {\textcolor{blue}{Tech Stack} \emph{GoLang, React, SQLite.}}
+    %       \resumeItemListEnd 
+         
+    %   \vspace{+6pt}
+     
 
-       \vspace{-8pt}
-%
+          \resumeSubheading
+      {Joplin}{}
+      {Open Source Contributor}{Jan'20 -- Apr'20}
+         \resumeItemListStart
+            \resumeItem{ Made a \href{https://rishabh-malhotraa.github.io/Joplin-proposal-draft/}{\underline{re-imagined inline}} markdown/WYSIWYG editor for
+            \href{https://github.com/laurent22/joplin/pulls?q=author\%3Arishabh-malhotraa}{\underline{Joplin}} using React. }
+            \resumeItem{Refactored large legacy application code into reusable functional code.}
+              \resumeItem   {\textcolor{blue}{Tech Stack} \emph{ElectronJS, React, Typescript, SQLite, NodeJS.}}
+          \resumeItemListEnd 
+        \resumeSubHeadingListEnd
+        
         %-----------PROGRAMMING SKILLS-----------
-        \section{Technical Skills}
-         \begin{itemize}[leftmargin=0.15in, label={}]
-            \normalsize{\item{
-             \textbf{Languages}{: JavaScript, TypeScript, GoLang, HTML/CSS, C++, SQL, Python, LaTex} \\
+        \section{\textcolor{blue}{Technical Skills}}
+            \vspace{2pt}
+        \begin{itemize}[leftmargin=0.0in, label={}]
+              \normalsize{\item{
+              \textbf{Languages}{: JavaScript, TypeScript, GoLang, HTML/CSS, C++, SQL, Python, LaTeX} \\
         	 \vspace{4pt}
-             \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Figma } \\
-        	 \vspace{4pt}
-             \textbf{Technologies/Frameworks}{: React, Express, Docker, Azure, Nginx, Websockets, Webrtc} \\
+              \textbf{Developer Tools}{: VS Code, Vim, Git, GitHub, Figma } \\
+        	\vspace{4pt}
+              \textbf{Technologies/Frameworks}{: React, Express, Flask, Docker, Azure, Nginx, Websockets, Webrtc} \\
             }}
-         \end{itemize}
-         \vspace{-16pt}
-
-\end{document}
+        \end{itemize}
+    \end{document}
