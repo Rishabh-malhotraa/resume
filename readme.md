@@ -1,4 +1,4 @@
-**For latest Iteration of my resume check it on [Google Docs](https://drive.google.com/file/d/16xamqZbdblW6dYYvKlw7bfbo0WKI1ro9/view?usp=sharing)**
+**For latest Iteration of my resume check it on [Google Docs](https://drive.google.com/file/d/1wFkMv8UKoqENFjxnBgGBcdEUuyN-kaU2/view)**
 
 **To Build**
 
